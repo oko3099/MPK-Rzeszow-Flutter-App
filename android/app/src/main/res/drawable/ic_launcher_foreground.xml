@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Karoseria autobusu -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="
+        M22,38
+        Q22,32 28,32
+        L80,32
+        Q86,32 86,38
+        L86,72
+        Q86,76 82,76
+        L26,76
+        Q22,76 22,72
+        Z"/>
+
+    <!-- Dach (jasnoszary) -->
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="
+        M22,38
+        Q22,32 28,32
+        L80,32
+        Q86,32 86,38
+        L86,48
+        L22,48
+        Z"/>
+
+    <!-- Okno 1 -->
+    <path
+        android:fillColor="#64B5F6"
+        android:pathData="M27,34 Q27,33 28,33 L36,33 Q37,33 37,34 L37,46 Q37,47 36,47 L28,47 Q27,47 27,46 Z"/>
+
+    <!-- Okno 2 -->
+    <path
+        android:fillColor="#64B5F6"
+        android:pathData="M40,34 Q40,33 41,33 L49,33 Q50,33 50,34 L50,46 Q50,47 49,47 L41,47 Q40,47 40,46 Z"/>
+
+    <!-- Okno 3 -->
+    <path
+        android:fillColor="#64B5F6"
+        android:pathData="M53,34 Q53,33 54,33 L62,33 Q63,33 63,34 L63,46 Q63,47 62,47 L54,47 Q53,47 53,46 Z"/>
+
+    <!-- Okno 4 -->
+    <path
+        android:fillColor="#64B5F6"
+        android:pathData="M66,34 Q66,33 67,33 L75,33 Q76,33 76,34 L76,46 Q76,47 75,47 L67,47 Q66,47 66,46 Z"/>
+
+    <!-- Pasek MPK (pomarańczowy) — widoczny przez monochromatyczny też -->
+    <path
+        android:fillColor="#FF8A50"
+        android:pathData="M22,56 L86,56 L86,63 L22,63 Z"/>
+
+    <!-- Drzwi -->
+    <path
+        android:fillColor="#90CAF9"
+        android:pathData="M68,52 Q68,51 69,51 L78,51 Q79,51 79,52 L79,74 Q79,75 78,75 L69,75 Q68,75 68,74 Z"/>
+
+    <!-- Linia środkowa drzwi -->
+    <path
+        android:fillColor="#BBDEFB"
+        android:pathData="M73,51 L74,51 L74,75 L73,75 Z"/>
+
+    <!-- Podwozie -->
+    <path
+        android:fillColor="#BDBDBD"
+        android:pathData="M22,74 L86,74 L86,78 L22,78 Z"/>
+
+    <!-- Koło lewe - obręcz -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M35,78 m-9,0 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0"/>
+
+    <!-- Koło lewe - felga -->
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M35,78 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0"/>
+
+    <!-- Koło lewe - środek -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M35,78 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0"/>
+
+    <!-- Koło prawe - obręcz -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M73,78 m-9,0 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0"/>
+
+    <!-- Koło prawe - felga -->
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M73,78 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0"/>
+
+    <!-- Koło prawe - środek -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M73,78 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0"/>
+
+</vector>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Pełna sylwetka autobusu — jeden kolor, system nadaje kolor z tapety -->
+
+    <!-- Karoseria -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="
+        M22,32
+        Q22,28 26,28
+        L82,28
+        Q86,28 86,32
+        L86,72
+        Q86,76 82,76
+        L26,76
+        Q22,76 22,72
+        Z"/>
+
+    <!-- Wycięcia okien (przezroczyste = tło ikony) -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M27,30 L37,30 L37,46 L27,46 Z"/>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M40,30 L50,30 L50,46 L40,46 Z"/>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M53,30 L63,30 L63,46 L53,46 Z"/>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M66,30 L76,30 L76,46 L66,46 Z"/>
+
+    <!-- Wycięcie drzwi -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M68,50 L79,50 L79,74 L68,74 Z"/>
+
+    <!-- Podwozie -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M22,76 L86,76 L86,80 L22,80 Z"/>
+
+    <!-- Koło lewe -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M35,80 m-9,0 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M35,80 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0"/>
+
+    <!-- Koło prawe -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M73,80 m-9,0 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M73,80 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0"/>
+
+</vector>
