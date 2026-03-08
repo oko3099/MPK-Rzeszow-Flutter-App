@@ -174,7 +174,7 @@ class SettingsScreen extends StatelessWidget {
                             Text('MPK Rzeszów Live',
                                 style: TextStyle(fontSize: 17, fontWeight: FontWeight.w800, color: cs.onSurface)),
                             const SizedBox(height: 2),
-                            Text('Wersja 1.0.0',
+                            Text('Wersja 1.0.1',
                                 style: TextStyle(fontSize: 12, color: cs.outline)),
                             Text('Flutter 3 · Material You',
                                 style: TextStyle(fontSize: 12, color: cs.outline)),

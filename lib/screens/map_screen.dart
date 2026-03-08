@@ -42,6 +42,10 @@ class _MapScreenState extends State<MapScreen> {
             initialCenter: LatLng(50.0413, 21.999),
             initialZoom: 13,
             maxZoom: 19,
+            interactionOptions: InteractionOptions(
+              scrollWheelVelocity: 0.005,
+              flags: InteractiveFlag.all,
+            ),
           ),
           children: [
             TileLayer(
