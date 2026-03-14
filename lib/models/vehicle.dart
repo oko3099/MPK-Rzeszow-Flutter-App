@@ -13,6 +13,9 @@ class Vehicle {
   final bool atTerminus;
   final String? statusLabel;
   final String? occupancy;
+  final int? year;
+  final String? nearestStop;
+  final int? nearestStopDist;
 
   const Vehicle({
     required this.id,
@@ -29,6 +32,9 @@ class Vehicle {
     this.atTerminus = false,
     this.statusLabel,
     this.occupancy,
+    this.year,
+    this.nearestStop,
+    this.nearestStopDist,
   });
 
   factory Vehicle.fromJson(Map<String, dynamic> j) => Vehicle(
@@ -46,6 +52,9 @@ class Vehicle {
         atTerminus: j['atTerminus'] ?? false,
         statusLabel: j['statusLabel'],
         occupancy: j['occupancy'],
+        year: j['year'],
+        nearestStop: j['nearestStop'] != null ? j['nearestStop']['name'] : null,
+        nearestStopDist: j['nearestStop'] != null ? j['nearestStop']['dist'] : null,
       );
 
   String get modelFull =>

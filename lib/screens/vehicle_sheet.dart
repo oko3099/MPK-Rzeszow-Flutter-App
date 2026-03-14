@@ -102,6 +102,17 @@ class VehicleSheet extends StatelessWidget {
                   _InfoRow(icon: Icons.business_outlined, label: 'Producent', value: vehicle.brand!),
                 if (vehicle.model != null)
                   _InfoRow(icon: Icons.directions_bus_outlined, label: 'Model', value: vehicle.model!),
+                if (vehicle.year != null)
+                  _InfoRow(icon: Icons.calendar_today_outlined, label: 'Rok produkcji', value: '${vehicle.year}'),
+                if (vehicle.nearestStop != null)
+                  _InfoRow(
+                    icon: Icons.location_on_outlined,
+                    label: 'Obecnie przy przystanku',
+                    value: vehicle.nearestStopDist != null
+                        ? '${vehicle.nearestStop} (${vehicle.nearestStopDist}m)'
+                        : vehicle.nearestStop!,
+                    valueColor: const Color(0xFF1565C0),
+                  ),
                 if (vehicle.bearing != null)
                   _InfoRow(icon: Icons.explore_outlined, label: 'Kierunek jazdy', value: '${vehicle.bearing!.toStringAsFixed(0)}°'),
                 _InfoRow(

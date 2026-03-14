@@ -1,9 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 import 'package:provider/provider.dart';
 import '../services/settings_state.dart';
 
-class SettingsScreen extends StatelessWidget {
+class SettingsScreen extends StatefulWidget {
   const SettingsScreen({super.key});
+  @override
+  State<SettingsScreen> createState() => _SettingsScreenState();
+}
+
+class _SettingsScreenState extends State<SettingsScreen> {
+  String _version = '1.0.2';
+
+  @override
+  void initState() {
+    super.initState();
+    PackageInfo.fromPlatform().then((info) {
+      setState(() => _version = '${info.version} (${info.buildNumber})');
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -174,7 +189,7 @@ class SettingsScreen extends StatelessWidget {
                             Text('MPK Rzeszów Live',
                                 style: TextStyle(fontSize: 17, fontWeight: FontWeight.w800, color: cs.onSurface)),
                             const SizedBox(height: 2),
-                            Text('Wersja 1.0.1',
+                            Text('Wersja $_version',
                                 style: TextStyle(fontSize: 12, color: cs.outline)),
                             Text('Flutter 3 · Material You',
                                 style: TextStyle(fontSize: 12, color: cs.outline)),

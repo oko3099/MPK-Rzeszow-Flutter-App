@@ -30,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return Scaffold(
       appBar: _index == 2
-          ? null // settings has own appbar
+          ? null // ustawienia mają własny nagłówek
           : AppBar(
               title: const Row(
                 children: [
