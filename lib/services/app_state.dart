@@ -83,12 +83,11 @@ class AppState extends ChangeNotifier {
 
   void applyFilters() {
     var list = all.where((v) {
-      // Przejazdy techniczne
+      // Przejazdy techniczne — ukryj gdy wyłączone
       if (v.isTechnical && !showTechnical) return false;
-      if (!showTechnical && filterLine.isEmpty && v.isTechnical) return false;
 
       if (filterLine.isNotEmpty &&
-          !v.lineNr.toLowerCase().contains(filterLine.toLowerCase())) return false;
+          v.lineNr != filterLine) return false;
       if (filterHead.isNotEmpty &&
           !(v.headsign ?? '').toLowerCase().contains(filterHead.toLowerCase())) return false;
       if (filterModel.isNotEmpty &&
