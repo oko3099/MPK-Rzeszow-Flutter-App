@@ -15,7 +15,8 @@ Aplikacja mobilna do śledzenia autobusów MPK Rzeszów na żywo. Pokazuje pozyc
 
 | Mapa | Lista | Ustawienia |
 |------|-------|------------|
-| ![Mapa](screenshots/mapa.png) | ![Lista](screenshots/lista.png) | ![Ustawienia](screenshots/ustawienia.png) |
+| Autobusy na żywo z markerami | Filtrowanie i sortowanie | Motywy i Material You |
+
 ---
 
 ## ✨ Funkcje

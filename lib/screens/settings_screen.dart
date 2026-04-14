@@ -10,7 +10,7 @@ class SettingsScreen extends StatefulWidget {
 }
 
 class _SettingsScreenState extends State<SettingsScreen> {
-  String _version = '1.0.2';
+  String _version = '2.0.0';
 
   @override
   void initState() {
@@ -36,6 +36,42 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
           // ── WYGLĄD ──────────────────────────────────────────────
           _SectionHeader('Wygląd'),
+
+          Card(
+            margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+            child: Padding(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(children: [
+                    Icon(Icons.animation_rounded, color: cs.primary, size: 20),
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('Animacje',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w600,
+                                  fontSize: 15,
+                                  color: cs.onSurface)),
+                          Text(
+                            'Przejścia między zakładkami i efekty UI',
+                            style: TextStyle(fontSize: 12, color: cs.outline),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Switch(
+                      value: settings.animationsEnabled,
+                      onChanged: (v) => settings.setAnimationsEnabled(v),
+                    ),
+                  ]),
+                ],
+              ),
+            ),
+          ),
 
           Card(
             margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),

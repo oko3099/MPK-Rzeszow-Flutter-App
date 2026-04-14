@@ -22,8 +22,8 @@ android {
         applicationId "pl.rzeszow.mpk_rzeszow"
         minSdkVersion flutter.minSdkVersion
         targetSdk 36
-        versionCode 5
-        versionName "1.0.4"
+        versionCode 6
+        versionName "2.0.0"
     }
 
     buildTypes {

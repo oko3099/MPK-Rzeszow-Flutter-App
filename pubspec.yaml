@@ -1,7 +1,7 @@
 name: mpk_rzeszow
 description: MPK Rzeszów – Live Bus Tracker
 publish_to: none
-version: 1.0.4+5
+version: 2.0.0+6
 
 environment:
   sdk: '>=3.2.0 <4.0.0'
